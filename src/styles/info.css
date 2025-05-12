@@ -1,0 +1,40 @@
+
+
+@media screen and (max-width: 890px) {
+    .navbar {
+        width: 60%;
+    }
+   
+    .download {
+        width: 70%;
+    }
+
+    .hero {
+        height: 28%;
+        top: 13%;
+        right: 10%;
+    }
+
+    .about {
+        display: inline;
+        text-align: center;
+    }
+
+    .about-hero {
+        display: none;
+    }
+
+    .text {
+        margin-top: 13%;
+        padding-inline: 20px;
+        font-size: 1.4rem;
+    }
+
+    .mara {
+        font-size: 1.3rem;
+    }
+
+    .text h2 {
+        font-size: 2.5rem;
+    }
+}
