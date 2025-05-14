@@ -15,7 +15,7 @@ const projects = [
   {
     image: image1,
     title: 'Travel Journal',
-    github: 'https://maracodez.github.io/travel-journal',
+    github: 'https://maracodez.github.io/travel-journal-website',
     live: 'https://travel-journal-website-tan.vercel.app/',
   },
   {
