@@ -21,7 +21,7 @@ const about  = () => {
 				<AboutData />
 			</div>
             
-            <button className="text-xl bg-black text-white mt-4 py-2 md:py-4 px-4 md:px-6 uppercase mr-2 cursor-pointer hover:bg-white hover:text-black hover:border-2 hover:shadow-lg transition-shadow duration-300">Download CV</button>
+            <button className="text-xl bg-black text-white mt-6 py-3 md:py-4 px-4 md:px-6 uppercase mr-2 cursor-pointer hover:bg-white hover:text-black hover:border-2 hover:shadow-lg transition-shadow duration-300">Download CV</button>
        </div>
     </div>
   )
