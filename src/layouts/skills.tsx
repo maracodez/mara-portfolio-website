@@ -31,9 +31,9 @@ const skills: React.FC = () => {
     ];
 
   return (
-    <div className=" mt-[10%] px-8">
+    <div className="mt-[15%] md:mt-[10%] px-8">
         <h2 className="text-center text-4xl font-semibold mb-6 uppercase">my skills</h2>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 gap-4">
             {MySkills.map((s) => (
                 <SkillBar key={s.skills} skill={s.skills} level={s.level} />
             ))}

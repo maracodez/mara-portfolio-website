@@ -46,20 +46,20 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="mt-[20%] text-center">
-      <p className="text-xl pb-2 text-gray-700">Portfolio</p>
+    <div className="mt-[50vh] md:mt-[30%] lg:mt-[20%] text-center">
+      <p className="text-3xl lg:text-xl pb-2 text-gray-700">Portfolio</p>
       <h5 className="font-semibold text-4xl py-4">Check My Wonderful Works</h5>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-8 cursor-pointer">
         {projects.map((project, index) => (
           <div 
 				key={index} 
-				className="relative group overflow-hidden rounded-xl shadow-lg"
+				className="relative group overflow-hidden rounded-xl shadow-lg "
 			>
             <img 
 				src={project.image} 
 				alt={project.title} 
-				className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105" 
+				className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer" 
 			/>
             <div className="absolute inset-0 bg-black bg-opacity-70 opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex flex-col items-center justify-center text-white px-4">
               <h3 className="text-xl font-bold mb-2">{project.title}</h3>

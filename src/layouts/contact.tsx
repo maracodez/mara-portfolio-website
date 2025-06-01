@@ -30,12 +30,12 @@ const Contact = () => {
 
   return (
     <div className="px-8 mt-12 mb-4 flex flex-col">
-      <h2 className="text-center font-semibold uppercase text-3xl">Contact</h2>
+      <h2 className="text-center font-semibold uppercase text-4xl lg:text-3xl">Contact</h2>
       <form onSubmit={handleSubmit} className="w-full flex flex-wrap gap-4 mt-4 mb-4 text-gray-700">
             <input
                 type="text"
                 placeholder="Name"
-                className="w-[45%] outline-none border-b border-gray-700"
+                className="w-[45%] md:text-2xl outline-none border-b border-gray-700"
                 required
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -43,7 +43,7 @@ const Contact = () => {
             <input
                 type="email"
                 placeholder="Email"
-                className="w-[48%] outline-none border-b border-gray-700"
+                className="w-[48%] md:text-2xl outline-none border-b border-gray-700"
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -51,14 +51,14 @@ const Contact = () => {
             <textarea
                 name="message"
                 placeholder="Message"
-                className="outline-none w-[80%] h-[200px] border-b border-gray-700"
+                className="outline-none md:text-2xl w-[80%] h-[200px] border-b border-gray-700"
                 required
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
             />
             <button
                 type="submit"
-                className="text-xl ml-[40%] w-1/4 mt-4 py-2 px-4 uppercase border cursor-pointer hover:bg-black hover:text-white hover:shadow-lg transition duration-300"
+                className="text-2xl lg:text-xl ml-[25%] md:ml-[40%] w-1/2 md:w-1/4 mt-4 py-2 px-4 uppercase border cursor-pointer hover:bg-black hover:text-white hover:shadow-lg transition duration-300"
             >
             Hire Me
             </button>

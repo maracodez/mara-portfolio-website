@@ -30,15 +30,16 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <div className={`navfix fixed top-0 left-0 w-full transition-all duration-300 z-50 flex justify-between ${
+    <div className={`fixed top-0 left-0 w-full transition-all duration-300 z-50 flex justify-between ${
       scrolled ? 'bg-white shadow-md' : 'bg-transparent'
     }`}>
-      <div className="px-8 py-2">
-        <h1 className="font-bold text-[2rem]">Mara</h1>
+      <div className=" px-8 py-2">
+        <h1 className="name font-bold text-[2rem]">Mara</h1>
       </div>
 
-      <div className="md:hidden cursor-pointer">
-			<button onClick={() => setIsOpen(!isOpen)} className="text-4xl">
+		{/* hamburger */}
+      <div className="md:hidden m-4">
+			<button onClick={() => setIsOpen(!isOpen)} className="text-4xl cursor-pointer">
 				{isOpen ? <FiX /> : <FiMenu />
 			
 				}

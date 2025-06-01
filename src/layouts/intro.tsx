@@ -7,11 +7,11 @@ const intro = () => {
     
   return (
     <div className="flex justify-between items-center mt-18">
-        <div className=" py-2 px-8">
+        <div className="text py-2 px-8">
             <p className="text-[1.5rem]">hello, I'm</p>
             <h2 className="font-bold text-[3rem]">Mara Ruth</h2>
             <p className="text-2xl py-2">A Front-End Developer</p>
-            <div className=" ">
+            <div className="explore ">
                 <button 
                     className=" text-xl bg-black text-white  py-4 px-8 shadow-md uppercase mr-2 cursor-pointer hover:bg-white hover:text-black hover:border-2"
                     onClick={() => {
@@ -28,7 +28,7 @@ const intro = () => {
                 >Explore More</button>
             </div>
         </div>
-        <div className="image w-[50%] z-10">
+        <div className="image hidden md:block w-[50%] z-10">
             <img 
                 src={downlaod} 
                 alt=""
