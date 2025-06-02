@@ -1,7 +1,7 @@
 //import React from 'react'
 import hero from "../assets/hero.jpg"
 import '../styles/info.css'
-import AboutData from "../layouts/data/aboutData"
+import AboutData from "../layouts/data/AboutData"
 
 
 const about  = () => {
