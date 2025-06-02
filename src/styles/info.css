@@ -83,3 +83,13 @@
         margin-top: 9%;
     }
 }
+
+@media screen and (max-width: 320px) {
+    .portfolio {
+        margin-top: 100vh;
+    }
+
+    .image {
+        height: 100vh;
+    }
+}

@@ -46,7 +46,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div className="mt-[50vh] md:mt-[29.5%] lg:mt-[20%] text-center">
+    <div className="portfolio mt-[50vh] md:mt-[30%] lg:mt-[20%] text-center">
       <p className="text-3xl lg:text-xl pb-2 text-gray-700">Portfolio</p>
       <h5 className="font-semibold text-4xl py-4">Check My Wonderful Works</h5>
 
