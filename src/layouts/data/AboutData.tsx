@@ -19,7 +19,7 @@ const AboutData = () => {
     const paragraph2 = "Beyond building interfaces, I'm driven by the bigger picture—creating technology that truly improves lives. I believe great front-end development can bridge the gap between people and powerful tech. As I grow in the field, I aim to contribute to projects that promote accessibility, innovation, and inclusivity in tech. I see every line of code as a step toward making digital experiences more meaningful and impactful.";
 
   return (
-    <div className="leading-relaxed">
+    <div className="leading-relaxed  md:text[1rem] lg:text[6px] pr-2">
         <p className="mb-4">{paragraph1}</p>
 
         {(showMore || !isMobile)  && <p className="mb-4">{paragraph2}</p>}
@@ -27,7 +27,7 @@ const AboutData = () => {
         {isMobile && (
             <button 
                 onClick={() => setShowMore((prev) => !prev)}
-                className="text-gray-600 underline cursor-pointer"
+                className="text-gray-600 underline cursor-pointer mb-4"
             >
                 {showMore ? "Show less" : "Read more"}
             </button>    

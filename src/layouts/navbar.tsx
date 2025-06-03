@@ -29,6 +29,8 @@ const Navbar: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <div className={`fixed top-0 left-0 w-full transition-all duration-300 z-50 flex justify-between ${
       scrolled ? 'bg-white shadow-md' : 'bg-transparent'
@@ -54,6 +56,7 @@ const Navbar: React.FC = () => {
               <a
                 key={item.id}
                 href={item.link}
+				onClick={closeMenu}
                 className={`hover:underline p-2 ${
                   activeSection === item.link.slice(1) ? "text-gray-600 underline" : ""
                 }`}

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react'
-import image from '../assets/html.jpg'
+import web from '../assets/webdev.jpg'
 
 const timer: React.FC = () => {
     // eslint-disable-next-line react-hooks/rules-of-hooks
@@ -30,8 +30,8 @@ const timer: React.FC = () => {
         className='text-[3rem] text-center my-[10%] relative'
     >
         <img 
-            src={image}
-            alt={image} 
+            src={web}
+            alt={web} 
             className='image w-full h-96 md:h-84  object-cover opacity-40 shadow-md absolute top-0 left-0'
         />
         <div className='absolute px-2 top-24 right-0 left-0'>

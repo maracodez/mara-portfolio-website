@@ -9,7 +9,7 @@ const intro = () => {
     <div className="flex justify-between items-center mt-18">
         <div className="text py-2 px-8">
             <p className="text-[1.5rem]">hello, I'm</p>
-            <h2 className="font-bold text-[3rem]">Mara Ruth</h2>
+            <h2 className="font-bold text-[2rem] md:text-[3rem]">Mara Ruth</h2>
             <p className="text-2xl py-2">A Front-End Developer</p>
             <div className="explore ">
                 <button 
