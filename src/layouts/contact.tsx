@@ -44,17 +44,20 @@ const Contact = () => {
 			<input 
 				type="text" 
 				name="user_name" 
+				required
 				className="w-[45%] md:text-2xl outline-none border-b border-gray-700"
               	placeholder="Name"
 			/>
 			<input 
 				type="email" 
 				name="user_email" 
+				required
 				className="w-[48%] md:text-2xl lg:text-xl outline-none border-b border-gray-700"
 				placeholder='Email'
 			/>
 			<textarea 
 				name="message" 
+				required
 				className="outline-none text-gray-600 md:text-2xl lg:text-xl w-[80%] h-[200px] border-b border-gray-700"
 				placeholder="Message"
 			/>

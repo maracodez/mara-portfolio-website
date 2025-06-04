@@ -1,6 +1,6 @@
 import image from '../assets/loopstudio crop.png';
 import image1 from '../assets/travel.png';
-import image2 from '../assets/desktop-preview.jpg';
+import image2 from '../assets/weather.png';
 import image3 from '../assets/Screenshot (35).png';
 import image4 from '../assets/Screenshot (36).png';
 import image5 from '../assets/Screenshot (44).png'
@@ -9,7 +9,7 @@ const projects = [
   {
     image: image,
     title: 'Loopstudio',
-    github: 'https://maracodez.github.io/loopstudio',
+    github: 'https://maracodez.github.io/loopstudio-landing-page/',
     live: 'https://loopstudio-landing-page-lyart.vercel.app/',
   },
   {
@@ -20,15 +20,15 @@ const projects = [
   },
   {
     image: image2,
-    title: 'Newsletter Page',
-    github: 'https://github.com/maracodex/newsletter',
-    live: 'https://newsletter.vercel.app',
+    title: 'Weather App',
+    github: 'https://maracodez.github.io/weatherApp/',
+    live: 'https://weather-app-one-wheat-30.vercel.app/',
   },
   {
     image: image3,
     title: 'Dog Breed',
     github: 'https://maracodez.github.io/dog-breed-api/',
-    live: 'https://vercel.com/mara1/dog-breed-api/EuhKYAUemkmYQeYBiS64H3Ya1bkb',
+    live: 'https://dog-breed-api-zeta.vercel.app/',
   },
   {
     image: image4,

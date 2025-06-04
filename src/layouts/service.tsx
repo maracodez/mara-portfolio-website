@@ -8,7 +8,7 @@ const service = () => {
         <div className="max-w-2xl mx-auto text-center">
             <p className="text-4xl md:text-3xl lg:text-xl pb-2 text-gray-700">Service</p>
             <h3 className="font-semibold text-5xl md:text-5xl lg:text-4xl py-4">What I Do</h3>
-            <p className="w-full text-xl md:text-2xl lg:text-xl leading-relaxed md:leading-loose">I craft sleek, responsive web interfaces that blend clean code with smooth wear experience, using tools like HTML, CSS, JavaScript, React, Tailwind, and TypeScript to bring ideas to life on the web.</p>
+            <p className="w-full text-xl px-8 md:text-2xl lg:text-xl leading-relaxed md:leading-loose">I craft sleek, responsive web interfaces that blend clean code with smooth wear experience, using tools like HTML, CSS, JavaScript, React, Tailwind, and TypeScript to bring ideas to life on the web.</p>
         </div>
         <section className='relative'>
             <div className=' mt-12 h-84'>

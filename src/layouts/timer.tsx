@@ -32,9 +32,9 @@ const timer: React.FC = () => {
         <img 
             src={web}
             alt={web} 
-            className='image w-full h-96 md:h-84  object-cover opacity-40 shadow-md absolute top-0 left-0'
+            className='image w-full h-[90vh] md:h-84  object-cover opacity-40 shadow-md absolute top-0 left-0'
         />
-        <div className='absolute px-2 top-24 right-0 left-0'>
+        <div className='absolute px-2 top-[30vh] md:top-24 lg:top-24 right-0 left-0'>
             <span className='font-bold '>{formatTime(secondsElapsed)}</span>
             <br />
             Time on this site! <br />
