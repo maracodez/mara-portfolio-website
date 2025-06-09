@@ -6,13 +6,21 @@ import Service from "../layouts/service"
 import Portfolio from "../layouts/portfolio"
 import Contact from "../layouts/contact"
 import Timer from "../layouts/timer"
+import FloatingContact from "./FloatingContact"
+import FloatingThemeToggle from "./ThemeToggle"
+import FloatingWhatsApp from "./FloatingWhatsApp"
 
 const Home = () => {
   return (
     <div>
         <Navbar />
-		<section id="home"> <Intro /></section>
+		<section id="home" > <Intro /></section>
 		<section id="about"><About /></section>
+		<FloatingContact />
+		<div className="bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
+			<FloatingThemeToggle />
+		</div>
+		<FloatingWhatsApp />
 		<Skills />
 		<section id="service"><Service /></section>
 		<section id="portfolio"><Portfolio /></section>

@@ -27,6 +27,7 @@ const AboutData = () => {
         {isMobile && (
             <button 
                 onClick={() => setShowMore((prev) => !prev)}
+                id="mode"
                 className="text-gray-600 underline cursor-pointer mb-4"
             >
                 {showMore ? "Show less" : "Read more"}

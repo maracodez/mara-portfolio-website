@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { navData } from "./data/navData";
-import '../styles/info.css'
+import "../styles/info.css";
 import { FiMenu, FiX } from "react-icons/fi";
+import { motion, AnimatePresence } from "framer-motion";
+
 
 const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("home");
-  const [isOpen, setIsOpen] = useState(false); //toggle mobile dropdown
+  const [isOpen, setIsOpen] = useState(false); // toggle mobile dropdown
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,56 +34,79 @@ const Navbar: React.FC = () => {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <div className={`fixed top-0 left-0 w-full transition-all duration-300 z-50 flex justify-between ${
-      scrolled ? 'bg-white shadow-md' : 'bg-transparent'
-    }`}>
-      <div className=" px-8 py-2">
-        <h1 className="name font-bold text-[2rem]">Mara</h1>
-      </div>
+    <motion.nav
+      initial={{ y: -80 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-white/80 backdrop-blur-md shadow-md "
+          : "bg-transparent"
+      }`}
+    >
+      <div className="flex justify-between items-center px-6 py-4">
+        <h1 className="font-bold text-3xl text-indigo-600">Mara</h1>
 
-		{/* hamburger */}
-      <div className="md:hidden m-4">
-			<button onClick={() => setIsOpen(!isOpen)} className="text-4xl cursor-pointer">
-				{isOpen ? <FiX /> : <FiMenu />
-			
-				}
-			</button>
+        {/* Hamburger Icon */}
+        <div className="md:hidden">
+          <button
+            onClick={() => setIsOpen(!isOpen)}
+            className="text-3xl text-gray-700 cursor-pointer"
+          >
+            {isOpen ? <FiX /> : <FiMenu />}
+          </button>
         </div>
 
-        {/* mobile dropdown */}
-        {isOpen && (
-            <div className=" md:hidden flex flex-col bg-gray-300 text-center py-6 text-2xl absolute top-16 left-0 right-0 w-full transition-transform duration-300 shadow-md">
-        
-            {navData.map((item) => (
-              <a
-                key={item.id}
-                href={item.link}
-				onClick={closeMenu}
-                className={`hover:underline p-2 ${
-                  activeSection === item.link.slice(1) ? "text-gray-600 underline" : ""
-                }`}
-              >
-                {item.name}
-              </a>
-            ))}
-          </div>
-        )}
+	  	
 
-      <div className="navbar hidden md:block bg-gray-300 flex gap-8 w-[50%] py-4 px-6 font-semibold text-[1rem] uppercase items-center">
-        
-        {navData.map((item) => (
-          <a
-            key={item.id}
-            href={item.link}
-            className={`hover:underline p-6 ${
-              activeSection === item.link.slice(1) ? "text-gray-600 underline" : ""
-            }`}
-          >
-            {item.name}
-          </a>
-        ))}
+        {/* Desktop Menu */}
+        <div className="hidden md:flex gap-10 font-medium text-sm uppercase">
+          {navData.map((item) => (
+            <a
+              key={item.id}
+              href={item.link}
+              className={`transition-colors duration-200 hover:text-indigo-600 ${
+                activeSection === item.link.slice(1)
+                  ? "text-indigo-600 underline underline-offset-4"
+                  : "text-gray-700"
+              }`}
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
       </div>
-    </div>
+
+      {/* Mobile Dropdown with Framer Motion */}
+      <AnimatePresence>
+			{isOpen && (
+				<motion.div
+					initial={{ height: 0, opacity: 0 }}
+					animate={{ height: "auto", opacity: 1 }}
+					exit={{ height: 0, opacity: 0 }}
+					transition={{ duration: 0.3 }}
+					id="skills"
+					className="md:hidden bg-white/95 backdrop-blur-md flex flex-col items-center gap-4 py-6 shadow-md text-lg"
+				>
+					{navData.map((item) => (
+						<a
+							key={item.id}
+							href={item.link}
+							onClick={closeMenu}
+							id="modes"
+							className={`transition-colors duration-200 hover:text-indigo-600 ${
+							activeSection === item.link.slice(1)
+								? "text-indigo-600 underline underline-offset-4"
+								: "text-gray-700"
+							}`}
+						>
+							{item.name}
+						</a>
+					))}
+				</motion.div>
+			)}
+      </AnimatePresence>
+    </motion.nav>
   );
 };
 

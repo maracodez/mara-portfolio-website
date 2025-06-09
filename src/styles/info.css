@@ -6,13 +6,13 @@
     }
    
     .download {
-        width: 70%;
+        width: 68%;
     }
 
     .hero {
-        height: 28%;
+        height: 22vh;
         top: 13%;
-        right: 10%;
+        right: 5%;
     }
 
     .about {
@@ -37,6 +37,7 @@
     .text h2 {
         font-size: 2.5rem;
     }
+
 }
 
 @media screen and (max-width: 800px) {
@@ -45,7 +46,7 @@
     }
 
     .hero {
-        height: 22%;
+        height: 18vh;
         top: 12%;
         right: 8%;
     }
@@ -85,7 +86,7 @@
 }
 
 @media screen and (max-width: 320px) {
-    .portfolio {
+    #portfolio {
         margin-top: 100vh;
     }
 
