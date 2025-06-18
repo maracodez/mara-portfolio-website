@@ -28,7 +28,6 @@ const FloatingThemeToggle = () => {
       title="Toggle Theme"
     >
       {darkMode ? <FaSun className="text-yellow-400" size={22} /> : <FaMoon className="text-blue-500" size={22} />}
-      <span className="text-sm font-medium"> {darkMode ? 'light Mode' : 'Dark Mode'}</span>
     </motion.button>
   );
 };

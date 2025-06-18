@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
 				<motion.div
 					initial={{ height: 0, opacity: 0 }}
 					animate={{ height: "auto", opacity: 1 }}
-					exit={{ height: 0, opacity: 0 }}
+					exit={{ opacity: 0, y: -10 }}
 					transition={{ duration: 0.3 }}
 					id="skills"
 					className="md:hidden bg-white/95 backdrop-blur-md flex flex-col items-center gap-4 py-6 shadow-md text-lg"

@@ -4,7 +4,7 @@ import About from "../layouts/about"
 import Skills from "../layouts/skills"
 import Service from "../layouts/service"
 import Portfolio from "../layouts/portfolio"
-import Contact from "../layouts/contact"
+import Contact from "../layouts/Contact"
 import Timer from "../layouts/timer"
 import FloatingContact from "./FloatingContact"
 import FloatingThemeToggle from "./ThemeToggle"
@@ -17,9 +17,9 @@ const Home = () => {
 		<section id="home" > <Intro /></section>
 		<section id="about"><About /></section>
 		<FloatingContact />
-		<div className="bg-white dark:bg-black text-black dark:text-white transition-colors duration-300">
-			<FloatingThemeToggle />
-		</div>
+		
+		<FloatingThemeToggle />
+		
 		<FloatingWhatsApp />
 		<Skills />
 		<section id="service"><Service /></section>

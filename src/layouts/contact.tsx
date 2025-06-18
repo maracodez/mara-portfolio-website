@@ -34,7 +34,7 @@ const Contact = () => {
   };
 
   return (
-	<div className="px-8 mt-12 mb-4 flex flex-col">
+	<div className="px-8 mt-12 mb-4 flex flex-col" id='contact'>
 		<h2 id='mode' className="text-center text-indigo-700 font-semibold uppercase text-4xl lg:text-3xl ">Contact</h2>
 		<form 
 			ref={form} 
