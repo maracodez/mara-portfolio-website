@@ -25,7 +25,7 @@ const Intro: React.FC = () => {
         <div className="flex gap-4 pt-6">
           <motion.button
             whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            whileTap={{ scale: 0.96 }}
             onClick={() =>
               document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
             }
