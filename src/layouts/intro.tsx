@@ -61,7 +61,7 @@ const Intro: React.FC = () => {
         />
         <img
           src={hero}
-          alt="Mara Hero"
+          alt="Hero"
           className="hero absolute h-[60vh] w-[62%] rounded-full top-20 right-10 z-20 shadow-2xl"
         />
       </motion.div>
