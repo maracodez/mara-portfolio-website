@@ -3,8 +3,9 @@ import emailjs from '@emailjs/browser';
 
 import  { useRef } from "react";
 
-const Contact = () => {
+const contact = () => {
 
+	// eslint-disable-next-line react-hooks/rules-of-hooks
 	const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: { preventDefault: () => void; }) => {
@@ -75,4 +76,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default contact
